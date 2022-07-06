@@ -86,19 +86,18 @@ header {
 
 .descetimg {
   display: flex;
-  flex-direction: row;
 }
 
 .photofam {
-  width: 35%;
+  width: 50%;
   height: 40%;
 }
 
 .descserie {
-  width: 30%;
+  width: 40%;
   margin-left: 30px;
   box-shadow: 2px 2px 4px 4px rgba(0, 0, 255, 0.2);
-  height: 37%;
+  height: 34%;
   padding: 10px;
 }
 
@@ -116,10 +115,9 @@ body {
 
 .menu {
   background-color: #f1e0ac;
-  width: 350px;
+  width: 850px;
   height: 600px;
-  margin-right: 25px;
-
+  margin-right: 20px;
   padding-bottom: 25px;
 }
 
@@ -129,11 +127,11 @@ body {
 }
 
 label {
-  padding: 20px;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 input {
-  margin-left: 20px;
   border: 2px solid black;
 }
 
@@ -145,10 +143,16 @@ input {
   padding: 40px;
 }
 
+.liste img {
+  width: 10%;
+}
+
 a {
   color: black;
 }
-
+.bloc a {
+  text-decoration: none;
+}
 ul {
   list-style-type: none;
 }
@@ -156,4 +160,101 @@ ul {
 .arrow {
   width: 20%;
   padding-left: 5px;
+}
+
+.bardroite {
+  background-color: #f1e0ac;
+  width: 750px;
+  height: 600px;
+}
+
+.bloc h1,
+h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.bloc {
+  border: 1px solid black;
+  margin-top: 3px;
+}
+
+/* Chat */
+
+form,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+#menu input {
+  font: 12px arial;
+}
+
+#menu a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#wrapper,
+#loginform {
+  margin: 0 auto;
+  padding-bottom: 25px;
+  background: #ebf4fb;
+  width: 304px;
+  border: 1px solid #acd8f0;
+}
+
+#loginform {
+  padding-top: 18px;
+}
+
+#loginform p {
+  margin: 5px;
+}
+
+#chatbox {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 10px;
+  background: #fff;
+  height: 270px;
+  width: 430px;
+  border: 1px solid #acd8f0;
+  overflow: auto;
+}
+
+#usermsg {
+  width: 395px;
+  border: 1px solid #acd8f0;
+}
+
+#submit {
+  width: 60px;
+}
+
+.error {
+  color: #ff0000;
+}
+
+#menu {
+  padding: 12.5px 25px 12.5px 25px;
+}
+
+.welcome {
+  float: left;
+}
+
+.logout {
+  float: right;
+}
+
+.msgln {
+  margin: 0 0 2px 0;
 }
