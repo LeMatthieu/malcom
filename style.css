@@ -86,23 +86,25 @@ header {
 
 .descetimg {
   display: flex;
+  flex-direction: row;
 }
 
 .photofam {
-  width: 50%;
+  width: 35%;
   height: 40%;
 }
 
 .descserie {
-  width: 40%;
+  width: 30%;
   margin-left: 30px;
   box-shadow: 2px 2px 4px 4px rgba(0, 0, 255, 0.2);
-  height: 34%;
+  height: 37%;
   padding: 10px;
 }
 
 .description {
   display: flex;
+  justify-content: space-evenly;
 }
 
 /* menu */
@@ -115,10 +117,9 @@ body {
 
 .menu {
   background-color: #f1e0ac;
-  width: 850px;
-  height: 600px;
-  margin-right: 20px;
-  padding-bottom: 25px;
+  width: 350px;
+  height: 700px;
+  margin-right: 25px;
 }
 
 .menu h1 {
@@ -127,11 +128,11 @@ body {
 }
 
 label {
-  padding: 10px;
-  margin-left: 20px;
+  padding: 20px;
 }
 
 input {
+  margin-left: 20px;
   border: 2px solid black;
 }
 
@@ -143,16 +144,10 @@ input {
   padding: 40px;
 }
 
-.liste img {
-  width: 10%;
-}
-
 a {
   color: black;
 }
-.bloc a {
-  text-decoration: none;
-}
+
 ul {
   list-style-type: none;
 }
@@ -162,10 +157,15 @@ ul {
   padding-left: 5px;
 }
 
-.bardroite {
-  background-color: #f1e0ac;
-  width: 750px;
-  height: 600px;
+.input1 {
+  margin-right: 25px;
+}
+
+/* barre droite */
+
+/* Chat */
+.bloc a {
+  text-decoration: none;
 }
 
 .bloc h1,
@@ -178,8 +178,11 @@ h2 {
   border: 1px solid black;
   margin-top: 3px;
 }
-
-/* Chat */
+.bardroite {
+  background-color: #f1e0ac;
+  width: 750px;
+  height: 700px;
+}
 
 form,
 p,
@@ -225,13 +228,13 @@ a:hover {
   padding: 10px;
   background: #fff;
   height: 270px;
-  width: 430px;
+  width: 283px;
   border: 1px solid #acd8f0;
   overflow: auto;
 }
 
 #usermsg {
-  width: 395px;
+  width: 178px;
   border: 1px solid #acd8f0;
 }
 
@@ -257,4 +260,130 @@ a:hover {
 
 .msgln {
   margin: 0 0 2px 0;
+}
+
+.quizz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f4a127;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-style: double;
+  border-color: #fffa7c;
+  border-width: 5px;
+}
+
+td {
+  background-color: #fffa7c;
+}
+
+.btn1 {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffa7c;
+}
+
+.titrequizz {
+  color: #772b01;
+}
+
+/*Display none*/
+
+.topnav {
+  display: none;
+}
+
+/*MEDIAQUERIES*/
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .menu {
+    display: none;
+  }
+
+  /* NAVBAR */
+  .topnav img {
+    width: 5%;
+  }
+
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: #f1e0ac;
+    position: relative;
+    display: block;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #f1e0ac;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #f1e0acb8;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #f1e0ac;
+    color: #f1e0ac;
+  }
+}
+
+/* Page Mediaqueries */
+
+@media (max-width: 450px) {
+  .descetimg {
+    flex-direction: column;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .descserie {
+    width: 100%;
+    height: 10%;
+    margin-left: 0px;
+  }
+
+  .photofam {
+    width: 100%;
+    height: 300px;
+  }
+
+  .quizz {
+    margin: 0px;
+  }
+  .bardroite {
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+  }
 }
